@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+            <meta charset="UTF-8">
+            <title>The editor page</title>
+            <link rel="stylesheet" href="stylesheet4.css">
+        </head>
+        <body>
+            <h2>Student role - 4</h2>
+            <ul>
+                <li>Name: Oshini Fonseka</li>
+                <li>UoW ID: w1868307</li>
+                <li>IIT ID:20210855</li>
+            </ul>
+            <br>
+            <hr>
+            <h3>Completed tasks:-</h3>
+            <ul>
+                <li>Sitemap using SVG</li>
+                <li>Gallery page with thumbnail images</li>
+                <li>Additional page containing anchor tags(description about the piano)</li>
+                <li>Applying a background image to the main page</li>
+                <li>Adding a title logo at the top of each page</li>
+                <li>Cretaing this editor page containing editor information</li>
+        </ul>
+        </body>
+    </html>

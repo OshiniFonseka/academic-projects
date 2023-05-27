@@ -1,0 +1,51 @@
+body{
+	background-image: url('https://wallpaperaccess.com/full/1470296.jpg');
+	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding:30px;
+	}
+h1{
+	font-family:  monospace;
+	font-size: 70px;
+	text-align: center;
+	color: rgb(238, 203, 163);
+	}
+p{
+	font-family: monospace;
+	font-size: 25px;
+	text-align: right;
+	color: rgb(238, 203, 163);
+	}
+.svgmap circle{
+	opacity: 0.6;
+	stroke:white;
+	fill: white;
+	stroke-width: 8px;
+	}
+.svgmap path{
+	opacity: 0.6;
+	stroke: white;
+	stroke-width: 8px;
+	}	
+.svgmap a circle{
+	fill: transparent;
+	stroke: rgb(238, 203, 163);
+	}	
+.svgmap a circle:hover{
+	fill: white;
+	stroke: white;
+	}
+.svgmap a text{
+	font-size: 30px;
+	font-family: monospace;
+	fill: rgb(238, 203, 163);
+	}
+.editor a{
+	text-decoration: underline;
+	color: white;
+	font-size: 20px;
+	font-family: monospace;
+	padding: 1px;
+	}
+		

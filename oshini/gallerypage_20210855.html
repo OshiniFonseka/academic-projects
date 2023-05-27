@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome to the gallery</title>
+
+		<link rel="stylesheet" href="stylesheet2.css">
+
+		<script>
+
+			var change;
+			function color(){
+				var color = document.getElementById("colors").value;
+				document.bgColor= color;
+			}
+
+			var change;
+			function colour(){
+				var color = document.getElementById("fontcolors").value;
+				document.fgColor=color;
+			}
+
+			function bigImg(x) {
+			x.style.height = "600px";
+			x.style.width = "600px";
+			}
+
+			function normalImg(x) {
+			x.style.height = "200px";
+			x.style.width = "200px";
+			}
+
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<img class="logo" id="mylogo" src="logo.png" alt="logo">
+		<h2> Basic Musical Instruments</h2>
+
+
+		<!--list of options for the background color-->
+		<h3>Choose a background-color for your page;</h3>
+			<form>
+				<select name="colors" onchange="color()" id="colors">
+					<option value="white">White</option>
+					<option value="LightGray">Light gray</option>
+					<option value="LightBlue">Light blue</option>
+					<option value="Lavender">Lavender</option>
+					<option value="LightYellow">Light yellow</option>
+					<option value="Beige">Beige</option>
+					<option value="LIghtPink">Light pink</option>
+					<option value="Aquamarine">Aquamarine</option>
+					<option value="LightSeaGreen">Light sea green</option>
+					<option value="LightGreen">Light green</option>
+
+				</select>
+			</form>
+
+		<!--list of options for the font color-->
+		<h3>Choose a font color for your page;</h3>
+			<form>
+				<select name="colors" onchange="colour()" id="fontcolors">
+					<option value="Black">Black</option>
+					<option value="DarkBlue">Blue</option>
+					<option value="DarkGreen">Green</option>
+					<option value="DarkOliveGreen">Olive green</option>
+					<option value="DarkRed">Red</option>
+					<option value="DarkSlateGray">Gray</option>
+					<option value="Purple">Purple</option>
+					<option value="SaddleBrown">Brown</option>
+					<option value="Salmon">Pink</option>
+					<option value="DarkCyan">Cyan</option>
+
+				</select>
+			</form>
+
+
+		<!--Thumbnail images inside the gallery page-->
+		<div class="mythumbnails" id="thumbnails">
+
+
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="thumb"
+			src="https://tinyurl.com/2p8sx8ry" alt="A piano">
+			<div class="desc">Piano is a large keyboard musical instrument with a wooden
+			case enclosing a soundboard and metal strings,
+			which are struck by hammers when the keys are depressed. </div>
+
+
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+			 src="https://tinyurl.com/2p8ew888" alt="Drumset">
+			<div class="desc">Drumset is a set of drums, cymbals, and other percussion
+			instruments, used with drumsticks in jazz and popular music.</div>
+
+
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+			 src="https://tinyurl.com/yswt8z3j" alt="A guitar">
+			<div class="desc">Guitar is a stringed musical instrument, with a
+			fretted fingerboard, typically incurved sides, and six or twelve strings,
+			played by plucking or strumming with the fingers or a plectrum. </div>
+
+
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+			src="https://tinyurl.com/93amazky" alt="A trumpet" >
+			<div class="desc">Trumpet is a brass musical instrument with a
+			flared bell and a bright, penetrating tone. The modern instrument has
+			the tubing looped to form a straight-sided coil, with three valves.</div>
+
+
+			<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+			 src="https://tinyurl.com/5a57en2d" alt="A violin" >
+			<div class="desc">Violin is a brass musical instrument with a flared bell and a bright,
+			penetrating tone. The modern instrument has the tubing
+			looped to form a straight-sided coil, with three valves.</div>
+
+    	</div>
+		<br><br><br><br>
+
+		<div class="editor" id="myeditor">
+			<a href="C:\Users\Oshini Fonseka\Desktop\viva\oshini\editorpage_202210855.html">Edited by Oshini Fonseka</a>
+		</div>
+
+	</body>
+</html>
