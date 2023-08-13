@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{ % block content %}
+<style>
+    .content-section content {
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    .content h1 {
+        font-size: 60px;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .content h1:hover {
+        color: #009688;
+        transition: 0.7s;
+    }
+
+    .content p {
+        text-align: center;
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+    .content-section p {
+        text-align: center;
+        margin: 20px auto;
+        font-weight: 100;
+
+    }
+
+    button {
+
+        width: 200PX;
+        padding: 15PX 0;
+        text-align: center;
+        margin: 20PX 10PX;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: black;
+        cursor: pointer;
+    }
+
+    .content-section button {
+
+        width: 200PX;
+        padding: 10PX 0;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+
+    }
+
+
+</style>
+
+{% block content %}
+
+<div class="content-section">
+    <div>
+        <div class="terms-box">
+            <div class="terms-text">
+                <h2> Crowd-Counting-Using-MCNN</h2>
+                <p>MCNN (Multi-column Convolutional Neural Network) is a deep learning algorithm used for crowd
+                    counting. The algorithm is designed to estimate the number of people in crowded scenes, such as
+                    shopping malls, train stations, and public events.
+                </p>
+                <p><B>MCNN algorithm consists of three main components:</B>
+                </p>
+                <p>->  Multi-column architecture: The MCNN architecture consists of multiple columns of convolutional
+                    neural networks (CNNs) that process the input image at different scales. Each column of the network
+                    has a different receptive field size, allowing the network to capture objects of different sizes in
+                    the image. The outputs of the different columns are then concatenated to form a final output that
+                    estimates the crowd density.
+                </p>
+                <p>->  Training: The MCNN algorithm is trained using a large dataset of annotated images. During
+                    training, the network learns to map the input image to the corresponding crowd density map, where
+                    each pixel in the density map represents the number of people in a small region of the image. The
+                    network is trained using a loss function that compares the predicted density map with the ground
+                    truth density map.
+                </p>
+                <p>->  Post-processing: After the network has predicted the crowd density map, the algorithm applies
+                    post-processing techniques to estimate the total number of people in the scene. This is done by
+                    summing the values of the density map and multiplying by a calibration factor that converts the
+                    density values to actual head counts.
+                </p>
+                <p>Overall, the MCNN algorithm is an effective method for crowd counting that has been shown to achieve
+                    state-of-the-art results on several benchmark datasets. Its multi-column architecture allows it to
+                    capture objects of different sizes in the image, while its training and post-processing steps ensure
+                    accurate and reliable crowd counting.</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+{% endblock content %}
+
+{ % endblock content %}
